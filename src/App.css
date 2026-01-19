@@ -1,38 +1,59 @@
-.App {
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #cfd9df, #e2ebf0);
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 60px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
   text-align: center;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background-color: #4f46e5;
   color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #3730a3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input,
+select {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+
+.logout-btn {
+  background-color: #dc2626;
+}
+
+.logout-btn:hover {
+  background-color: #991b1b;
 }
